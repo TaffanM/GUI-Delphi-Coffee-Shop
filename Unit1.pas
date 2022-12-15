@@ -28,11 +28,25 @@ implementation
 
 uses Unit2;
 
+var
+  UserName,password : string;
+
 {$R *.dfm}
 
 procedure TForm1.btn1Click(Sender: TObject);
 begin
-  form2.show;
+  Username := 'user';
+  password := '123';
+
+  if((edt1.text = UserName) and (edt2.Text = password)) then
+  begin
+    Form1.Hide;
+    Form2.show;
+
+    ShowMessage('Selamat datang ' + UserName);
+  end
+  else
+    ShowMessage('Username dan password anda salah');
 end;
 
 end.

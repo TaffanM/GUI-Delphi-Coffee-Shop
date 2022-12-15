@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 1151
-  Top = 215
+  Left = 1108
+  Top = 258
   Width = 479
   Height = 675
   Caption = 'Login Form'
@@ -509,6 +509,7 @@ object Form1: TForm1
     Font.Name = 'Gill Sans MT'
     Font.Style = [fsBold]
     ParentFont = False
+    PasswordChar = '*'
     TabOrder = 1
   end
   object btn1: TBitBtn

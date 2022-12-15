@@ -1,6 +1,6 @@
 object Form2: TForm2
-  Left = 795
-  Top = 361
+  Left = -36
+  Top = 313
   Width = 642
   Height = 384
   Caption = 'Main Menu'
@@ -41,6 +41,7 @@ object Form2: TForm2
     Height = 41
     Caption = 'Menu'
     TabOrder = 0
+    OnClick = btn1Click
   end
   object btn2: TBitBtn
     Left = 64
@@ -57,6 +58,7 @@ object Form2: TForm2
     Height = 41
     Caption = 'About Us'
     TabOrder = 2
+    OnClick = btn3Click
   end
   object btn4: TBitBtn
     Left = 472

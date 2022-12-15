@@ -18,6 +18,8 @@ type
     procedure tmr1Timer(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure btn4Click(Sender: TObject);
+    procedure btn1Click(Sender: TObject);
+    procedure btn3Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -29,7 +31,7 @@ var
 
 implementation
 
-uses Unit1;
+uses Unit1, Unit3, Unit4;
 
 {$R *.dfm}
 
@@ -47,6 +49,18 @@ procedure TForm2.btn4Click(Sender: TObject);
 begin
   Form2.Hide;
   form1.show;
+end;
+
+procedure TForm2.btn1Click(Sender: TObject);
+begin
+  Form2.Hide;
+  Form3.Show;
+end;
+
+procedure TForm2.btn3Click(Sender: TObject);
+begin
+  Form2.Hide;
+  form4.show;
 end;
 
 end.
