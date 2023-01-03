@@ -9,6 +9,8 @@ uses
 type
   TForm4 = class(TForm)
     lbl1: TLabel;
+    btn1: TButton;
+    procedure btn1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -20,6 +22,14 @@ var
 
 implementation
 
+uses Unit2;
+
 {$R *.dfm}
+
+procedure TForm4.btn1Click(Sender: TObject);
+begin
+  form4.Hide;
+  form2.show;
+end;
 
 end.

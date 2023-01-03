@@ -20,6 +20,7 @@ type
     procedure btn4Click(Sender: TObject);
     procedure btn1Click(Sender: TObject);
     procedure btn3Click(Sender: TObject);
+    procedure btn2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -31,7 +32,7 @@ var
 
 implementation
 
-uses Unit1, Unit3, Unit4;
+uses Unit1, Unit3, Unit4, Unit5;
 
 {$R *.dfm}
 
@@ -61,6 +62,12 @@ procedure TForm2.btn3Click(Sender: TObject);
 begin
   Form2.Hide;
   form4.show;
+end;
+
+procedure TForm2.btn2Click(Sender: TObject);
+begin
+  form5.show;
+  form2.hide;
 end;
 
 end.

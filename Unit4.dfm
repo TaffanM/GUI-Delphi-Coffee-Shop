@@ -5,14 +5,14 @@ object Form4: TForm4
   Height = 465
   Caption = 'About Us'
   Color = clCream
-  Font.Charset = DEFAULT_CHARSET
+  Font.Charset = ANSI_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
-  Font.Name = 'MS Sans Serif'
+  Font.Name = 'Gill Sans MT'
   Font.Style = []
   OldCreateOrder = False
   PixelsPerInch = 96
-  TextHeight = 13
+  TextHeight = 16
   object lbl1: TLabel
     Left = 48
     Top = 40
@@ -25,5 +25,14 @@ object Form4: TForm4
     Font.Name = 'Gill Sans MT'
     Font.Style = [fsBold]
     ParentFont = False
+  end
+  object btn1: TButton
+    Left = 393
+    Top = 353
+    Width = 73
+    Height = 25
+    Caption = 'Kembali'
+    TabOrder = 0
+    OnClick = btn1Click
   end
 end

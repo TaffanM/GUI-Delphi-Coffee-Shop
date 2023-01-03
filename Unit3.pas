@@ -32,6 +32,8 @@ type
     lbl11: TLabel;
     lbl12: TLabel;
     btn6: TButton;
+    btn7: TButton;
+    procedure btn7Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -43,6 +45,14 @@ var
 
 implementation
 
+uses Unit2;
+
 {$R *.dfm}
+
+procedure TForm3.btn7Click(Sender: TObject);
+begin
+  form3.hide;
+  form2.show;
+end;
 
 end.

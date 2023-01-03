@@ -50,6 +50,7 @@ object Form2: TForm2
     Height = 41
     Caption = 'Payment'
     TabOrder = 1
+    OnClick = btn2Click
   end
   object btn3: TBitBtn
     Left = 64
