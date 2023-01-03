@@ -1,6 +1,6 @@
 object Form5: TForm5
-  Left = 192
-  Top = 125
+  Left = 1363
+  Top = 174
   Width = 403
   Height = 540
   Caption = 'Payment'
@@ -33,6 +33,7 @@ object Form5: TForm5
     Height = 33
     Caption = 'Bayar'
     TabOrder = 1
+    OnClick = btn1Click
   end
   object btn2: TButton
     Left = 26
@@ -42,5 +43,23 @@ object Form5: TForm5
     Caption = 'Kembali'
     TabOrder = 2
     OnClick = btn2Click
+  end
+  object btn3: TButton
+    Left = 264
+    Top = 376
+    Width = 89
+    Height = 33
+    Caption = 'Hapus'
+    TabOrder = 3
+    OnClick = btn3Click
+  end
+  object btn4: TButton
+    Left = 264
+    Top = 328
+    Width = 89
+    Height = 33
+    Caption = 'Cetak Struk'
+    TabOrder = 4
+    OnClick = btn4Click
   end
 end

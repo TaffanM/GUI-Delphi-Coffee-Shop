@@ -33,11 +33,37 @@ type
     lbl12: TLabel;
     btn6: TButton;
     btn7: TButton;
+    combo1: TComboBox;
+    combo2: TComboBox;
+    combo3: TComboBox;
+    combo4: TComboBox;
+    combo5: TComboBox;
+    combo6: TComboBox;
+    rb1: TRadioButton;
+    rb2: TRadioButton;
+    rb3: TRadioButton;
+    rb4: TRadioButton;
+    rb5: TRadioButton;
+    rb6: TRadioButton;
+    rb7: TRadioButton;
+    rb8: TRadioButton;
+    rb9: TRadioButton;
+    rb10: TRadioButton;
+    rb11: TRadioButton;
+    rb12: TRadioButton;
+    combo7: TComboBox;
+    combo8: TComboBox;
+    combo9: TComboBox;
+    combo10: TComboBox;
+    combo11: TComboBox;
+    combo12: TComboBox;
     procedure btn7Click(Sender: TObject);
+    procedure btn1Click(Sender: TObject);
   private
     { Private declarations }
   public
     { Public declarations }
+    rcoffee, americano, vlatte, cappucino, latte, mocha : Double;
   end;
 
 var
@@ -45,14 +71,52 @@ var
 
 implementation
 
-uses Unit2;
+uses Unit2, Unit5;
 
 {$R *.dfm}
+
 
 procedure TForm3.btn7Click(Sender: TObject);
 begin
   form3.hide;
   form2.show;
+end;
+
+
+
+procedure TForm3.btn1Click(Sender: TObject);
+var
+  tx : TextFile;
+begin
+  rcoffee := 20000;
+  if combo7.text = 'One Shot' then
+  begin
+    rcoffee := rcoffee + 2000;
+  end;
+  if combo7.text = 'Two Shot' then
+  begin
+    rcoffee := rcoffee + 4000;
+  end;
+  if combo7.text = 'Three Shot' then
+  begin
+    rcoffee := rcoffee + 6000;
+  end;
+  AssignFile(tx,'Struk_Pembayaran.txt');
+  Rewrite(tx);
+  writeln(tx,'------------------------------------------------------------------------');
+  writeln(tx,'                 Struk Pembayaran');
+  writeln(tx,'                   Books Store');
+  writeln(tx,'              Jln. Cihampelas no. 21');
+  writeln(tx,'------------------------------------------------------------------------');
+  writeln(tx,rcoffee:3:2);
+  writeln(tx,'------------------------------------------------------------------------');
+  writeln(tx,'           Thank you for ordering');
+  writeln(tx,'------------------------------------------------------------------------');
+  CloseFile(tx);
+
+  showMessage('Minuman berhasil dimasukkan ke keranjang');
+
+
 end;
 
 end.

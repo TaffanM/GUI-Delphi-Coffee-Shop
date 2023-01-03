@@ -1,6 +1,6 @@
 object Form2: TForm2
-  Left = -36
-  Top = 313
+  Left = 337
+  Top = 444
   Width = 642
   Height = 384
   Caption = 'Main Menu'

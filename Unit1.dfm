@@ -1,9 +1,9 @@
 object Form1: TForm1
-  Left = 1108
-  Top = 258
+  Left = 950
+  Top = 217
   Width = 479
   Height = 675
-  Caption = 'Login Form'
+  Caption = 'Login'
   Color = clCream
   Font.Charset = ANSI_CHARSET
   Font.Color = clWindowText
@@ -516,7 +516,7 @@ object Form1: TForm1
     Left = 184
     Top = 480
     Width = 97
-    Height = 25
+    Height = 49
     Caption = 'Login'
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText

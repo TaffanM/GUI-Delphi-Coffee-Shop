@@ -12,9 +12,9 @@ type
     btn2: TBitBtn;
     btn3: TBitBtn;
     lbl1: TLabel;
-    tmr1: TTimer;
     lbl2: TLabel;
     btn4: TBitBtn;
+    tmr1: TTimer;
     procedure tmr1Timer(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure btn4Click(Sender: TObject);
