@@ -11,6 +11,7 @@ object Form1: TForm1
   Font.Name = 'Gill Sans MT'
   Font.Style = [fsBold]
   OldCreateOrder = False
+  OnActivate = FormActivate
   PixelsPerInch = 96
   TextHeight = 27
   object img1: TImage
@@ -484,6 +485,34 @@ object Form1: TForm1
     Width = 84
     Height = 27
     Caption = 'Password'
+  end
+  object lbl3: TLabel
+    Left = 136
+    Top = 536
+    Width = 98
+    Height = 16
+    Caption = 'Belum punya akun?'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Gill Sans MT'
+    Font.Style = [fsBold]
+    ParentFont = False
+    OnClick = lbl3Click
+  end
+  object lbl4: TLabel
+    Left = 240
+    Top = 536
+    Width = 82
+    Height = 16
+    Caption = 'Bikin akun disini'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clBlue
+    Font.Height = -11
+    Font.Name = 'Gill Sans MT'
+    Font.Style = [fsBold]
+    ParentFont = False
+    OnClick = lbl3Click
   end
   object edt1: TEdit
     Left = 136

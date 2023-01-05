@@ -13,6 +13,19 @@ object Form5: TForm5
   OldCreateOrder = False
   PixelsPerInch = 96
   TextHeight = 16
+  object lbl1: TLabel
+    Left = 16
+    Top = 368
+    Width = 71
+    Height = 18
+    Caption = 'Grand Total '
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Gill Sans MT'
+    Font.Style = []
+    ParentFont = False
+  end
   object memoOne: TMemo
     Left = 16
     Top = 24
@@ -61,5 +74,12 @@ object Form5: TForm5
     Caption = 'Cetak Struk'
     TabOrder = 4
     OnClick = btn4Click
+  end
+  object edt1: TEdit
+    Left = 96
+    Top = 368
+    Width = 161
+    Height = 24
+    TabOrder = 5
   end
 end

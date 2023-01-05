@@ -10,6 +10,7 @@ type
   TForm4 = class(TForm)
     lbl1: TLabel;
     btn1: TButton;
+    lbl2: TLabel;
     procedure btn1Click(Sender: TObject);
   private
     { Private declarations }
